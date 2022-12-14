@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+$primary: hsl(231, 69%, 60%);
+$danger: hsl(0, 94%, 66%);
+$font-family-sans-serif: 'Rubik', sans-serif;
+
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-padding-y: 1.5rem;
+$nav-link-color: #000;
+$nav-link-font-weight: bold;
+
+
+
+$btn-padding-x: 2rem;
+$btn-border-width: 2px;
+
+$card-border-color: transparent;
+$card-border-radius: 1rem;
+
+$accordion-icon-active-color: $primary;
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// .min-vh-90{
+//     min-height: 90vh;
+// }
+
+.header{
+    z-index: 1000;
+}
+.feature-tabs{
+    .nav-link{
+        padding: 1rem 2.5rem;
+    }
+    // .nav-pills .nav-link{
+    //     border: none;
+    //     background-color: none;
+    // }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: $primary;
+        background-color: #fff;
+        border-bottom: 3px solid $primary;
+        
+    }
+    .nav-pills .nav-link {
+        background: none;
+        border: 0;
+        border-radius: 0;
+        font-size: 16px;
+    }
+}
+.mb-150{
+    margin-bottom: 150px;
+}
+.mb-300{
+    margin-bottom: 300px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.text-lead{
+    letter-spacing: 3px;
+}
+
+footer{
+    background-color: hsl(229, 31%, 21%);
+}
+
+@media screen and (max-width:576px) {
+    .btn{
+       padding-left: 1rem;
+       padding-right: 1rem;
+    }
+}
